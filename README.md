@@ -2,24 +2,77 @@
 # Keep The Ball Flying
 ## Welcome to Keep The Ball Flying!
 
-This project was my Internal Assessment for the Computer Science High Level subject of the International Baccalaureate. Everything you'll find here is my own creation. Feel free to explore and use any aspect you'd like.
-
-## Description
-Keep The Ball Flying is a desktop application developed with Processing 4, designed to facilitate the work of volleyball team coaches. Connected to a database, this application provides various functionalities to enhance team management and training.
-
-## Key Features
-- **Multiple Screens**: The application features several screens, including a virtual whiteboard for designing tactics, a table for viewing player information, and a log of saved plays for analysis and future reference.
-- **Database Connection**: The application is connected to a local database using MySQLWorkbench.
-- **Object-Oriented Programming**: The application utilizes all aspects of object-oriented programming, including encapsulation, inheritance, and polymorphism, to create modular, reusable, and maintainable code.
-- **Six-versioned**: You will see there are six versions of the application, use the most recent, the others are made just to see progress.
-
-## Additional Information
-- **Development Time**: The development process of Keep The Ball Flying has taken almost a year, during which I worked on implementing features, designing the user interface, and solving technical issues.
-- **Language(s)**: You'll see there are many natural languages in this project, that's totally my fault (i've mixed spanish, catalan and english)
-- **Documentation**:The documentation for the project consists of 12 PDF files that explain both the development process and the functioning of the application. These documents provide detailed insights into various aspects of the project, including design choices, implementation details, and usage instructions. Criteria E is missing because the file is too big, but you can [click here](https://drive.google.com/file/d/16zbyCVkEzI179xp--qM2RgnEFgVsGidk/view?usp=drive_link).
-  
-    > As one of my early projects developed as an unexperienced teenager, there might be some flaws or areas for improvement. Please keep this in mind while exploring the application.
+This project was originally developed in **2022** as my Internal Assessment for the Computer Science Higher Level subject of the **International Baccalaureate**. Everything you'll find here is my own original work — feel free to explore, help, use and get inspired by any part of it.
 
 
 
-I hope you enjoy exploring Keep The Ball Flying as much as I enjoyed developing it! If you have any questions or suggestions, feel free to contact me.
+## 🏐 Description
+
+**Keep The Ball Flying** is a desktop application built with **Processing 4**, designed to assist **volleyball team coaches** in managing their teams more effectively. Initially connected to a **MySQL database**, the application provided tools for planning, visualizing tactics, and managing player data.
+
+
+## ✨ Key Features
+
+- **Multiple Screens**: Includes a **virtual whiteboard** for designing tactics, a **player info table**, and a **logbook** for saved plays.
+- **Database Support**:
+  - 🕰️ **Version 6 and below** used a **MySQL database** (via MySQL Workbench).
+  - 🔄 **From now on**, the database is being migrated to a **local `.db` (SQLite)** file for easier access and portability.
+- **Object-Oriented Design**: Fully embraces **OOP principles** — encapsulation, inheritance, and polymorphism — for clean, modular, and maintainable code.
+- **Six Versions**: There are six historical versions of the app. **Version 6** is the one submitted to the International Baccalaureate. Use the **most recent version** if you want a stable legacy reference, or follow the **new development branch** for future updates.
+
+
+
+## 🛠️ Project Evolution (2025 Onward)
+
+> As of **2025**, *Keep The Ball Flying* is no longer just an academic project — it is now being transformed into an **open-source project**.
+
+- 📖 This repository is now **public**.
+- 🧠 I'm using this project as a **sandbox for personal and professional growth**.
+- 🧩 Expect structural changes, feature redesigns, and experiments.
+- 🧪 **Contributions**, suggestions, or constructive criticism are always welcome!
+
+
+
+## 📝 Documentation
+
+The documentation includes **12 PDF files** explaining both the development process and the functioning of the application, including design decisions and usage instructions.  
+
+> **Note**: Criterion E is not included due to file size, but you can view it [here](https://drive.google.com/file/d/16zbyCVkEzI179xp--qM2RgnEFgVsGidk/view?usp=drive_link).
+
+
+
+## 🌐 Languages
+
+Yes, the code and documentation may contain **Spanish**, **Catalan**, and **English** — my bad! This was one of my first serious projects, and I didn’t yet have a clear standard. Expect some multilingual moments!
+
+
+## 🚀 How to Run the Application
+
+### ✅ Requirements
+
+- You need to have **Processing 5** installed and properly set up in **Visual Studio Code (VSCode)**.  
+  👉 [Follow this tutorial](https://www.youtube.com/watch?v=LKuu-WcOZYA) to install and configure it.
+
+### ▶️ Running the App in VSCode
+
+Once you have everything ready, open a terminal and run:
+
+```bash
+processing-java --sketch="your-absolute-path/Internal-Assessment-CS-IB/v07" --run
+```
+
+🔁 Replace "your-absolute-path" with the actual full path where you’ve saved the project on your machine.
+
+🧪 Note: As development continues, the folder name may change from v07 to a new version or branch reflecting ongoing improvements with SQLite integration.
+
+## ⚠️ Disclaimer
+
+This was developed when I was still a very inexperienced (but passionate) teenager.  
+So if you spot some clunky code or bad practices — you're probably right.  
+But that’s exactly why I’m coming back to it now ❤️
+
+
+## 🙌 Final Note
+
+I hope you enjoy exploring *Keep The Ball Flying* as much as I enjoyed building (and rebuilding) it.  
+If you have questions, want to collaborate, or just want to say hi — feel free to reach out!
