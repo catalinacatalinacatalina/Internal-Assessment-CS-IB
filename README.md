@@ -15,10 +15,10 @@ This project was originally developed in **2022** as my Internal Assessment for 
 
 - **Multiple Screens**: Includes a **virtual whiteboard** for designing tactics, a **player info table**, and a **logbook** for saved plays.
 - **Database Support**:
-  - 🕰️ **Version 6 and below** used a **MySQL database** (via MySQL Workbench).
+  - 🕰️ **Version 6 and below** (./deprecated) used a **MySQL database** (via MySQL Workbench).
   - 🔄 **From now on**, the database is being migrated to a **local `.db` (SQLite)** file for easier access and portability.
 - **Object-Oriented Design**: Fully embraces **OOP principles** — encapsulation, inheritance, and polymorphism — for clean, modular, and maintainable code.
-- **Six Versions**: There are six historical versions of the app. **Version 6** is the one submitted to the International Baccalaureate. Use the **most recent version** if you want a stable legacy reference, or follow the **new development branch** for future updates.
+- **Six Historical Versions**: There are six historical versions of the app (./deprecated). **Version 6** is the one submitted to the International Baccalaureate. Use the **most recent version** (src) if you want a stable legacy reference, or follow the **new development branch** for future updates.
 
 
 
@@ -58,12 +58,11 @@ Yes, the code and documentation may contain **Spanish**, **Catalan**, and **Engl
 Once you have everything ready, open a terminal and run:
 
 ```bash
-processing-java --sketch="your-absolute-path/Internal-Assessment-CS-IB/v07" --run
+processing-java --sketch="your-absolute-path/Internal-Assessment-CS-IB/src" --run
 ```
 
 🔁 Replace "your-absolute-path" with the actual full path where you’ve saved the project on your machine.
 
-🧪 Note: As development continues, the folder name may change from v07 to a new version or branch reflecting ongoing improvements with SQLite integration.
 
 ## ⚠️ Disclaimer
 
