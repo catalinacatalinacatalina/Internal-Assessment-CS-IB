@@ -76,7 +76,7 @@ public String[][] getInfoTablaJugadores(){
             datos[i][2] = rs.getString("posicion");
             i++;
         }
-        println("Información JUGADORES \t-- COMPLETADO");
+        println("Informacion JUGADORES \t-- COMPLETADO");
         return datos;
 
     } catch (Exception e) {
@@ -95,7 +95,7 @@ public String[][] getInfoTablaEquipo(){
     try {
         ResultSet rs = query.executeQuery(
             "SELECT j.id AS id, j.nombre AS nombre, p.nombre AS categoria " +
-            "FROM equipo j, categoria p WHERE j.categoria_id = p.id ORDER BY fecha ASC"
+            "FROM equipo j, categoria p WHERE j.categoria_id = p.id" //ORDER BY fecha ASC
         );
 
         int i = 0;
@@ -105,7 +105,7 @@ public String[][] getInfoTablaEquipo(){
             datos[i][2] = rs.getString("categoria");
             i++;
         }
-        println("Información EQUIPO \t-- COMPLETADO");
+        println("Informacion EQUIPO \t-- COMPLETADO");
         return datos;
 
     } catch (Exception e) {
@@ -140,7 +140,7 @@ public String[][] getInfoTablaPartido(){
             }
             i++;
         }
-        println("Información PARTIDO \t-- COMPLETADO");
+        println("Informacion PARTIDO \t-- COMPLETADO");
         return datos;
 
     } catch (Exception e) {
@@ -172,7 +172,7 @@ public String[] getInfoPosicion(){
             datos[i] = rs.getString("nombre");
             i++;
         }
-        println("Información POSICION \t-- COMPLETADO");
+        println("Informacion POSICION \t-- COMPLETADO");
         return datos;
     } catch (Exception e) {
         println("Error getInfoPosicion");
@@ -222,3 +222,18 @@ public String formataFechaEsp(String fecha){
     String[] partes = fecha.split("-");
     return partes[2] + "/" + partes[1] + "/" + partes[0];
 }
+
+void insertaJugador(String n, String d, String s){
+  
+  try {
+        String q = " INSERT INTO `jugador` (`id`, `nombre`, `dorsal`, `equipo`, `posicion_id`) VALUES (NULL, '"+n+"', '"+d+"', 1, '"+s+"')";
+        println("INSERT: "+q);
+        query.execute(q);
+        println("INSERT OK :)");
+    }
+    catch(Exception e) {
+        System.out.println(e);
+    }
+
+}
+ 
