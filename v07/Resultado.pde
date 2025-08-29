@@ -113,7 +113,15 @@ class Resultado{
                     textAlign(CENTER);
                     
                     // Encadenamiento de sets en funcion del numero de sets:
-                    sets = s1_1+"-"+s1_2+"/"+s2_1+"-"+s2_2+"/"+s3_1+"-"+s3_2+ "/" + s4_1 + "-" + s4_2+ "/" + s5_1 + "-" + s5_2;
+                    sets = s1_1+"-"+s1_2+"/"+s2_1+"-"+s2_2+"/"+s3_1+"-"+s3_2;
+
+                    if(s4_1 != null && s4_2 != null){
+                        sets += "/"+s4_1+"-"+s4_2;
+                        if(s5_1 != null && s5_2 != null){
+                            sets += "/"+s5_1+"-"+s5_2;
+                        }
+                    }
+                    
                     text(sets , x, y + 130, 380);
                 popStyle();
         popStyle();
